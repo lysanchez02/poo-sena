@@ -1,0 +1,40 @@
+<!--LeyderSanchez
+CC.1061544819-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<h1>"PROMEDIO DE NOTAS"</h1>
+		<P>Ingrese 3 Notas</P>
+	</head>
+
+	<body>
+<input type="text" id="N1">
+<input type="text" id="N2">
+<input type="text" id="N3">
+<button onclick=promNota()>Aceptar</button>
+		<script>
+
+function promNota(nota1=parseFloat(document.getElementById("N1").value), nota2=parseFloat(document.getElementById("N2").value), nota3=parseFloat(document.getElementById("N3").value)){
+    var promed=(nota1+nota2+nota3)/3
+
+if (promed>=5.0 & promed<=7.0) {
+        alert("APROBADO :D")
+} else {
+
+    if (promed>=3.0 & promed<5.0) {
+        alert("PRESENTAR EXAMEN!!!")
+    } else {
+        
+        if (promed<3.0) {
+      alert("REPROBADO :(")
+        } else {
+
+            alert("ERROR!!!")
+   }
+  }   
+ }
+}
+		</script>
+</body>
+</html>
